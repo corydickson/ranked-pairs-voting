@@ -1,0 +1,44 @@
+{
+  "name": "ranked-pairs-voting",
+  "version": "0.0.1",
+  "description": "Ethereum contracts for ranked pair voting scheme",
+  "main": "index.js",
+  "repository": "https://github.com/corydickson/ranked-pairs-voting.git",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "truffle compile",
+    "test:sol": "truffle test",
+    "lint": "yarn run lint:sol && yarn run lint:js",
+    "lint:js": "eslint .",
+    "lint:js:fix": "eslint . --fix",
+    "lint:sol": "solium -d ./contracts/",
+    "lint:sol:fix": "solium -d . --fix"
+  },
+  "keywords": [
+    "governance",
+    "voting",
+    "solidity",
+    "ethereum"
+  ],
+  "author": "Cory Dickson <cory.dickson@protonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^2.5.0",
+    "bignumber.js": "^9.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "babel-eslint": "^10.0.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.7.0",
+    "eslint-plugin-import": "^2.8.0",
+    "ethlint": "^1.2.5",
+    "truffle": "^5.1.1"
+  }
+}
